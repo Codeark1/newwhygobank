@@ -3,6 +3,11 @@ const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const User = require('../Models/userModel');
 
+
+const test = async (req,res)=>{
+  return res.status(200).json("hello world")
+}
+
 const login = async (req, res) => {
   const { email, password } = req.body;
 
